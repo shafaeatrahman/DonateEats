@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "548714961243",
+    "project_id": "donateeats",
+    "storage_bucket": "donateeats.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:548714961243:android:6e3d9d34d5fbcf8b8fa27e",
+        "android_client_info": {
+          "package_name": "com.example.aahaarapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "548714961243-d0hmhbaqmb7o75jottpp8pt6g136r0qh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHHC5K7s-dG-HRq6AF8ie7i53mQ9Rd9vs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "548714961243-d0hmhbaqmb7o75jottpp8pt6g136r0qh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

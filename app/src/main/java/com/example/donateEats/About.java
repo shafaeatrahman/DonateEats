@@ -29,7 +29,7 @@ public class About extends AppCompatActivity {
             public void onClick(View v) {
                 // Open Instagram link in a web browser
                 Intent myWebLink = new Intent(android.content.Intent.ACTION_VIEW);
-                myWebLink.setData(Uri.parse("http://www.instagram.com"));
+                myWebLink.setData(Uri.parse("https://www.instagram.com/shafaeat_rahman__tushar/"));
                 startActivity(myWebLink);
             }
         });
@@ -38,7 +38,7 @@ public class About extends AppCompatActivity {
             public void onClick(View v) {
                 // Open Facebook link in a web browser
                 Intent myWebLink = new Intent(android.content.Intent.ACTION_VIEW);
-                myWebLink.setData(Uri.parse("http://www.facebook.com/shafeat"));
+                myWebLink.setData(Uri.parse("https://www.facebook.com/shafaeatrahman.tushar.9"));
                 startActivity(myWebLink);
             }
         });

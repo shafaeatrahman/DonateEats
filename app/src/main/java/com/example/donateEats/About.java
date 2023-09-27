@@ -38,7 +38,7 @@ public class About extends AppCompatActivity {
             public void onClick(View v) {
                 // Open Facebook link in a web browser
                 Intent myWebLink = new Intent(android.content.Intent.ACTION_VIEW);
-                myWebLink.setData(Uri.parse("http://www.facebook.com"));
+                myWebLink.setData(Uri.parse("http://www.facebook.com/shafeat"));
                 startActivity(myWebLink);
             }
         });

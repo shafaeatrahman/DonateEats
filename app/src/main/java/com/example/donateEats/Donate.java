@@ -206,3 +206,4 @@ public class Donate extends AppCompatActivity implements OnMapReadyCallback, Goo
         }
     }
 }
+

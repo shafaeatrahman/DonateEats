@@ -5,8 +5,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bthre"
-    android:padding="16dp"
+    android:background="#F8EEEC"
+    android:padding="0dp"
     android:gravity="center"
     tools:context=".Signup">
 
@@ -16,18 +16,26 @@
         android:orientation="vertical"
         android:gravity="center"
         android:layout_marginTop="-50dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginLeft="0dp"
         tools:ignore="UselessParent">
 
         <ImageView
-            android:id="@+id/profile"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:background="@drawable/round_background"
-            android:padding="15dp"
-            android:src="@drawable/add"
-            tools:ignore="ContentDescription" />
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/top_background2" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:text="Create Account"
+            android:textColor="#3B608C"
+            android:textSize="40sp"
+            android:textStyle="bold" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/nameError"
@@ -42,18 +50,19 @@
             <EditText
                 android:id="@+id/name"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:hint="@string/name"
-                android:textSize="20sp"
-                android:fontFamily="@font/opensans"
-                android:inputType="textNoSuggestions"
-                android:background="@android:color/transparent"
-                android:textColor="@color/black"
-                android:textColorHint="@color/black"
-                android:maxLines="1"
-                android:singleLine="true"
-                android:importantForAutofill="no"/>
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/edittext_background"
+                android:drawableStart="@drawable/name"
+                android:drawablePadding="16dp"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:padding="8dp"
+                android:textColorHint="#756C6C" />
+
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -67,22 +76,22 @@
             app:hintTextColor="@color/black"
             app:boxStrokeColor="@color/black">
 
+
             <EditText
                 android:id="@+id/email"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:hint="@string/prompt_email"
-                android:textSize="20sp"
-                android:fontFamily="@font/opensans"
-                android:inputType="textEmailAddress"
-                android:background="@android:color/transparent"
-                android:maxLines="1"
-                android:singleLine="true"
-                android:textColor="@color/black"
-                android:textColorHint="@color/black"
-                android:importantForAutofill="no"/>
-
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/edittext_background"
+                android:drawableStart="@drawable/email"
+                android:drawablePadding="16dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textPersonName"
+                android:padding="8dp"
+                android:textColorHint="#756C6C" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -95,22 +104,22 @@
             app:hintTextColor="@color/black"
             app:boxStrokeColor="@color/black">
 
+
             <EditText
                 android:id="@+id/phone"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:hint="@string/phone_number"
-                android:textSize="20sp"
-                android:fontFamily="@font/opensans"
-                android:maxLength="13"
-                android:background="@android:color/transparent"
-                android:inputType="phone"
-                android:maxLines="1"
-                android:singleLine="true"
-                android:textColor="@color/black"
-                android:textColorHint="@color/black"
-                android:importantForAutofill="no"/>
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/edittext_background"
+                android:drawableStart="@drawable/ic_menu_send"
+                android:drawablePadding="16dp"
+                android:ems="10"
+                android:hint="Phone"
+                android:inputType="textPersonName"
+                android:padding="8dp"
+                android:textColorHint="#756C6C" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -128,18 +137,18 @@
             <EditText
                 android:id="@+id/password"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:hint="@string/prompt_password"
-                android:textSize="20sp"
-                android:fontFamily="@font/opensans"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/edittext_background"
+                android:drawableStart="@drawable/password"
+                android:drawablePadding="16dp"
+                android:ems="10"
+                android:hint="Password"
                 android:inputType="textPassword"
-                android:background="@android:color/transparent"
-                android:maxLines="1"
-                android:singleLine="true"
-                android:textColor="@color/black"
-                android:textColorHint="@color/black"
-                android:importantForAutofill="no"/>
+                android:padding="8dp"
+                android:textColorHint="#756C6C" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -148,9 +157,9 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_margin="20dp"
-            android:background="@drawable/button_rounded"
+            android:background="@drawable/btn_background"
             android:text="@string/register"
-            android:textColor="@android:color/white"
+            android:textColor="@android:color/black"
             android:textSize="16sp"/>
 
         <TextView
@@ -161,7 +170,7 @@
             android:layout_marginBottom="5dp"
             android:gravity="center"
             android:text="@string/not_register"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:fontFamily="@font/opensans"
             android:textSize="17sp"/>
 

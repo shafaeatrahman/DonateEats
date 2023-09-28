@@ -3,6 +3,7 @@ package com.example.donateEats;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
@@ -12,7 +13,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
 
-    CardView donate, receive, logout, foodmap, about, contact, mypin, history;
+    LinearLayout donate, receive, logout, foodmap, about, contact, mypin, history;
     FirebaseAuth fAuth;
 
     @Override
@@ -20,14 +21,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        donate = findViewById(R.id.cardDonate);
-        receive = findViewById(R.id.cardReceive);
-        logout = findViewById(R.id.cardLogout);
-        foodmap = findViewById(R.id.cardFoodmap);
-        mypin = findViewById(R.id.cardMyPin);
-        history = findViewById(R.id.cardHistory);
-        about = findViewById(R.id.cardAboutus);
-        contact = findViewById(R.id.cardContact);
+        donate = findViewById(R.id.linearLayoutDonate); // Change CardView ID to LinearLayout ID
+        receive = findViewById(R.id.linearLayoutReceive); // Change CardView ID to LinearLayout ID
+        logout = findViewById(R.id.linearLayoutLogout); // Change CardView ID to LinearLayout ID
+        foodmap = findViewById(R.id.linearLayoutFoodmap); // Change CardView ID to LinearLayout ID
+        mypin = findViewById(R.id.linearLayoutMyPin); // Change CardView ID to LinearLayout ID
+        history = findViewById(R.id.linearLayoutHistory); // Change CardView ID to LinearLayout ID
+        about = findViewById(R.id.linearLayoutAboutus); // Change CardView ID to LinearLayout ID
+        contact = findViewById(R.id.linearLayoutContact); // Change CardView ID to LinearLayout ID
 
         fAuth= FirebaseAuth.getInstance();
         if(fAuth.getCurrentUser() ==null){

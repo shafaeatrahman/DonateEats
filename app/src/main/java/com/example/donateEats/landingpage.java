@@ -6,12 +6,13 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.LinearLayout;
 
 import com.google.firebase.auth.FirebaseAuth;
 
 public class landingpage extends AppCompatActivity {
 
-    CardView login,register,about;
+    LinearLayout login,register,about;
     FirebaseAuth fAuth;
 
     @Override
@@ -19,9 +20,9 @@ public class landingpage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_landingpage);
 
-        login = findViewById(R.id.cardLogin);
-        register = findViewById(R.id.cardRegister);
-        about = findViewById(R.id.cardAboutus);
+        login = findViewById(R.id.linearLayoutLogin);
+        register = findViewById(R.id.linearLayoutRegister);
+        about = findViewById(R.id.linearLayoutAboutus);
 
         fAuth= FirebaseAuth.getInstance();
         if(fAuth.getCurrentUser() !=null){

@@ -65,7 +65,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
-                    app:srcCompat="@drawable/video_call" />
+                    app:srcCompat="@drawable/btn_arraw1" />
 
                 <TextView
 
@@ -93,7 +93,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
-                    app:srcCompat="@drawable/notification" />
+                    app:srcCompat="@drawable/btn_arrow2" />
 
                 <TextView
 
@@ -119,7 +119,7 @@
                 <ImageView
 
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="75dp"
                     android:layout_margin="8dp"
                     app:srcCompat="@drawable/voice_call" />
 

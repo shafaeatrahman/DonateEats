@@ -1,17 +1,17 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.AAHAARAPP" parent="Theme.AppCompat.NoActionBar">
+    <style name="Theme.DONATEEATS" parent="Theme.AppCompat.NoActionBar">
         <item name="colorPrimary">@color/black</item>
         <item name="colorPrimaryDark">@color/black</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="Theme.AAHAARAPP.NoActionBar">
+    <style name="Theme.DONATEEATS.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="Theme.AAHAARAPP.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme..AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-    <style name="Theme.AAHAARAPP.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="Theme.DONATEEATS.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

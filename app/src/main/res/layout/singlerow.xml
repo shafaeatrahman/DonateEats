@@ -95,6 +95,30 @@
         android:textColor="@color/white"
         android:textSize="18sp" />
     </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/delete"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/sd"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="5dp"
+            tools:ignore="KeyboardInaccessibleWidget">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/opensans"
+                android:text="@string/interested"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:id="@+id/delete"
             android:layout_width="match_parent"

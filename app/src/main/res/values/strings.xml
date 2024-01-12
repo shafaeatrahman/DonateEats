@@ -23,6 +23,7 @@ Donate Eats facilitates suitable platforms for compassionate individuals to init
     <string name="error_invalid_password">Please enter a minimum password of 6 characters</string>
 
     <string name="donor_name">Donor Name</string>
+    <string name="interested">Interested</string>
     <string name="food_name">Food Items</string>
     <string name="description">Description</string>
     <string name="submit">Submit</string>

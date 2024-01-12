@@ -18,25 +18,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DONATEEATS"
         tools:ignore="AllowBackup">
-        <activity android:name="com.example.donateEats.UserdataActivity"></activity>
-        <activity android:name="com.example.donateEats.History" />
-        <activity android:name="com.example.donateEats.MyPin" />
-        <activity android:name="com.example.donateEats.About" />
-        <activity android:name="com.example.donateEats.FoodMap" />
+        <activity
+            android:name=".fao"
+            android:exported="false" />
+        <activity android:name=".UserdataActivity" />
+        <activity android:name=".History" />
+        <activity android:name=".MyPin" />
+        <activity android:name=".About" />
+        <activity android:name=".FoodMap" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyBtAubRGSlTZanGLTPT3JrKWsRCFAXZzrE" />
 
-        <activity android:name="com.example.donateEats.Receive" />
-        <activity android:name="com.example.donateEats.Contact" />
-        <activity android:name="com.example.donateEats.Signup" />
-        <activity android:name="com.example.donateEats.Logup" />
-        <activity android:name="com.example.donateEats.MainActivity" />
-        <activity android:name="com.example.donateEats.Donate" />
-        <activity android:name="com.example.donateEats.landingpage" />
+        <activity android:name=".Receive" />
+        <activity android:name=".Contact" />
+        <activity android:name=".Signup" />
+        <activity android:name=".Logup" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Donate" />
+        <activity android:name=".landingpage" />
         <activity
-            android:name="com.example.donateEats.SplashScreen"
+            android:name=".SplashScreen"
             android:theme="@style/SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

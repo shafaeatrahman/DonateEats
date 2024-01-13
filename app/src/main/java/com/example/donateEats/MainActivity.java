@@ -13,7 +13,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
 
-    LinearLayout donate, receive, logout, foodmap, about, contact, mypin, history;
+    LinearLayout donate, receive, logout, foodmap, about, contact, mypin, displaydataactivity, history;
     FirebaseAuth fAuth;
 
     @Override
@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         history = findViewById(R.id.linearLayoutHistory); // Change CardView ID to LinearLayout ID
         about = findViewById(R.id.linearLayoutAboutus); // Change CardView ID to LinearLayout ID
         contact = findViewById(R.id.linearLayoutContact); // Change CardView ID to LinearLayout ID
+        displaydataactivity = findViewById(R.id.linearLayoutDisplayDataActivity); // Change CardView ID to LinearLayout ID
 
         fAuth= FirebaseAuth.getInstance();
         if(fAuth.getCurrentUser() ==null){
@@ -90,6 +91,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), Contact.class);
+                startActivity(intent);
+            }
+        });
+        displaydataactivity.setOnClickListener(new View.OnClickListener ()
+        {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), DisplayDataActivity.class);
                 startActivity(intent);
             }
         });

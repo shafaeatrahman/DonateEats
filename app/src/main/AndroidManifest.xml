@@ -19,6 +19,9 @@
         android:theme="@style/Theme.DONATEEATS"
         tools:ignore="AllowBackup">
         <activity
+            android:name=".DisplayDataActivity"
+            android:exported="false" />
+        <activity
             android:name=".fao"
             android:exported="false" />
         <activity android:name=".UserdataActivity" />

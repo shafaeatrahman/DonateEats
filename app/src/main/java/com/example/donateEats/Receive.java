@@ -139,6 +139,7 @@ public class Receive extends AppCompatActivity implements OnMapReadyCallback, Go
                 user.put("location",geoPoint);
                 user.put("userid",userID);
                 user.put("type",type);
+                user.put("interestedCount", 0);
 
                 collectionReference.add(user)
                         .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {

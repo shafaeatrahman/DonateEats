@@ -150,6 +150,7 @@ public class Donate extends AppCompatActivity implements OnMapReadyCallback, Goo
                 user.put("location",geoPoint);
                 user.put("userid",userID);
                 user.put("type",type);
+                user.put("interestedCount", 0);
 
                 collectionReference.add(user)
                         .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {

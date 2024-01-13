@@ -5,10 +5,11 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;  // Add this import statement
+import androidx.cardview.widget.CardView;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.CollectionReference;
@@ -69,25 +70,34 @@ public class DisplayDataActivity extends AppCompatActivity {
                                 entryCardView.setRadius(12);
                                 entryCardView.setCardElevation(5);
 
+                                // Create a RelativeLayout to hold the TextView and Interested Button
+                                RelativeLayout cardContainer = new RelativeLayout(DisplayDataActivity.this);
+                                entryCardView.addView(cardContainer);
+
                                 // Create a TextView to display the data
                                 TextView entryTextView = new TextView(DisplayDataActivity.this);
-                                LinearLayout.LayoutParams textParams = new LinearLayout.LayoutParams(
-                                        LinearLayout.LayoutParams.WRAP_CONTENT,
-                                        LinearLayout.LayoutParams.WRAP_CONTENT
+                                RelativeLayout.LayoutParams textParams = new RelativeLayout.LayoutParams(
+                                        RelativeLayout.LayoutParams.WRAP_CONTENT,
+                                        RelativeLayout.LayoutParams.WRAP_CONTENT
                                 );
                                 textParams.setMargins(16, 16, 16, 16);
                                 entryTextView.setLayoutParams(textParams);
                                 entryTextView.setText("Name: " + name + "\nUser Type: " + type + "\nDescription: " + description + "\nInterested Count: " + interestedCount);
                                 entryTextView.setTextSize(18);
-                                entryCardView.addView(entryTextView);
+                                cardContainer.addView(entryTextView);
 
                                 // Create an Interested Button for each entry
                                 Button interestedButton = new Button(DisplayDataActivity.this);
-                                interestedButton.setLayoutParams(new LinearLayout.LayoutParams(
-                                        LinearLayout.LayoutParams.MATCH_PARENT,
-                                        LinearLayout.LayoutParams.WRAP_CONTENT
-                                ));
+                                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                                        RelativeLayout.LayoutParams.WRAP_CONTENT,
+                                        RelativeLayout.LayoutParams.WRAP_CONTENT
+                                );
+                                buttonParams.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM); // Align at the bottom
+                                buttonParams.addRule(RelativeLayout.ALIGN_PARENT_END); // Align at the end (right)
+                                buttonParams.setMargins(0, 0, 16, 16); // Adjust margins as needed
+                                interestedButton.setLayoutParams(buttonParams);
 
+                                // Set text and click listener for Interested Button
                                 interestedButton.setText("Interested");
                                 interestedButton.setOnClickListener(new View.OnClickListener() {
                                     @Override
@@ -99,7 +109,7 @@ public class DisplayDataActivity extends AppCompatActivity {
                                     }
                                 });
 
-                                entryCardView.addView(interestedButton);
+                                cardContainer.addView(interestedButton);
                                 showDataLayout.addView(entryCardView);
                             }
                         } else {

@@ -53,7 +53,7 @@ public class DisplayDataActivity extends AppCompatActivity {
                             for (QueryDocumentSnapshot document : task.getResult()) {
                                 // Retrieve data from Firestore
                                 String name = document.getString("name");
-                                String type = document.getString("user type");
+                                String type = document.getString("phone");
                                 String description = document.getString("description");
                                 Long interestedCount = document.getLong("interestedCount");
 
@@ -82,7 +82,7 @@ public class DisplayDataActivity extends AppCompatActivity {
                                 );
                                 textParams.setMargins(16, 16, 16, 16);
                                 entryTextView.setLayoutParams(textParams);
-                                entryTextView.setText("Name: " + name + "\nUser Type: " + type + "\nDescription: " + description + "\nInterested Count: " + interestedCount);
+                                entryTextView.setText("Name: " + name + "\nPhone: " + type + "\nDescription: " + description + "\nInterested Count: " + interestedCount);
                                 entryTextView.setTextSize(18);
                                 cardContainer.addView(entryTextView);
 

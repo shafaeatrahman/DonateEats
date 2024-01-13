@@ -82,13 +82,11 @@ public class DisplayDataActivity extends AppCompatActivity {
                                 entryCardView.addView(entryTextView);
 
                                 // Create an Interested Button for each entry
-                                Button  interestedButton = new Button(DisplayDataActivity.this);
+                                Button interestedButton = new Button(DisplayDataActivity.this);
                                 interestedButton.setLayoutParams(new LinearLayout.LayoutParams(
                                         LinearLayout.LayoutParams.MATCH_PARENT,
                                         LinearLayout.LayoutParams.WRAP_CONTENT
                                 ));
-                                buttonParams.setMargins(16, 8, 16, 8);  // Adjust margins as needed
-                                interestedButton.setLayoutParams(buttonParams);
 
                                 interestedButton.setText("Interested");
                                 interestedButton.setOnClickListener(new View.OnClickListener() {
